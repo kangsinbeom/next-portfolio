@@ -1,4 +1,4 @@
-import ContentArea from '@/components/ContentArea';
+import ContentArea from '@/components/common/ContentArea';
 
 const About = () => {
   return (

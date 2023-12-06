@@ -1,9 +1,12 @@
-import ContentArea from '@/components/ContentArea';
+import ContentArea from '@/components/common/ContentArea';
+import Header from '@/components/header/Header';
+import Title from '@/components/header/Title';
 
 const Intro = () => {
   return (
     <ContentArea>
-      <div>gi</div>
+      <Header />
+      <Title />
     </ContentArea>
   );
 };
