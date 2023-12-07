@@ -1,6 +1,8 @@
 import type { Config } from 'tailwindcss';
 
-const config: Config = {
+const plugin = require('tailwindcss/plugin');
+
+module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
@@ -15,6 +17,14 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addUtilities }: { addUtilities: any }) {
+      addUtilities({
+        '.content-area': {
+          '@apply relative flex h-screen w-screen border-2 border-red-600 bg-slate-400 p-5':
+            '',
+        },
+      });
+    }),
+  ],
 };
-export default config;
