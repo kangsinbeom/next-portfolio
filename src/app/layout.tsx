@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import SideNav from '@/components/common/SideNav';
+import SideNav from '@/common/sideNav/SideNav';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
