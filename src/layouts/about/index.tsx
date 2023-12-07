@@ -1,11 +1,14 @@
+import CommentBox from '@/components/about/CommentBox';
+import MainImage from '@/components/about/MainImage';
+import SubTitle from '@/components/about/SubTitle';
 import ContentArea from '@/components/common/ContentArea';
 
-const About = () => {
+export const About = () => {
   return (
     <ContentArea>
-      <div>gi</div>
+      <MainImage />
+      <CommentBox />
+      <SubTitle />
     </ContentArea>
   );
 };
-
-export default About;

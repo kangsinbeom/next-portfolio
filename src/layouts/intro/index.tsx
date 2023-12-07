@@ -1,8 +1,8 @@
 import ContentArea from '@/components/common/ContentArea';
-import Header from '@/components/header/Header';
-import Title from '@/components/header/Title';
+import Title from '@/components/intro/Title';
+import Header from '@/components/intro/header/Header';
 
-const Intro = () => {
+export const Intro = () => {
   return (
     <ContentArea>
       <Header />
@@ -10,5 +10,3 @@ const Intro = () => {
     </ContentArea>
   );
 };
-
-export default Intro;

@@ -1,11 +1,10 @@
-import About from '@/layouts/about';
-import Intro from '@/layouts/intro';
-
+import { Intro, About, Skills } from '@/layouts';
 export default function Home() {
   return (
     <>
       <Intro />
       <About />
+      <Skills />
     </>
   );
 }
