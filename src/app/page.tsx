@@ -1,4 +1,4 @@
-import { About, Intro, Skills } from '.';
+import { About, Contract, Intro, Project, Skills } from '.';
 
 export default function Home() {
   return (
@@ -6,6 +6,8 @@ export default function Home() {
       <Intro />
       <About />
       <Skills />
+      <Project />
+      <Contract />
     </>
   );
 }

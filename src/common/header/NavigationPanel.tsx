@@ -7,11 +7,11 @@ const NavigationPanel = () => {
   const [select, setSelect] = useState<string>('INTRO');
   const navList = ['INTRO', 'ABOUT', 'SKILLS', 'PROJECT', 'CONTACT'];
   return (
-    <div className="flex gap-3 ">
+    <nav className="flex gap-3 ">
       {navList.map((item) => (
         <NavItem key={item} title={item} />
       ))}
-    </div>
+    </nav>
   );
 };
 

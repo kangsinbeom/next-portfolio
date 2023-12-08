@@ -1,10 +1,10 @@
-import { Left, Right } from './layout';
+import { Left, Right } from './layouts';
 
 export const About = () => {
   return (
-    <div className="flex-row content-area">
+    <section className="flex-row content-area">
       <Left />
       <Right />
-    </div>
+    </section>
   );
 };

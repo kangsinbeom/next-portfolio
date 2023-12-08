@@ -1,5 +1,5 @@
-const Subtitle = ({ title }: { title: string }) => {
-  return <h2 className="font-lalezar">{title}</h2>;
+const Subtitle = ({ children }: { children: string }) => {
+  return <h2 className="font-lalezar text-6xl">{children}</h2>;
 };
 
 export default Subtitle;
