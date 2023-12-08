@@ -13,3 +13,7 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+p {
+  color: white;
+  font-size: 18px;
+}

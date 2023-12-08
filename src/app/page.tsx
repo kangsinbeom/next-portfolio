@@ -1,4 +1,5 @@
-import { Intro, About, Skills } from '@/layouts';
+import { About, Intro, Skills } from '.';
+
 export default function Home() {
   return (
     <>

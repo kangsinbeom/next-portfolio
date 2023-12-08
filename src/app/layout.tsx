@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import SideNav from '@/common/sideNav/SideNav';
+import Header from '@/common/header/Header';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -17,8 +18,8 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-
       <body>
+        <Header />
         <SideNav />
         <main>{children}</main>
       </body>

@@ -3,7 +3,7 @@ import NavigationPanel from './NavigationPanel';
 
 const Header = () => {
   return (
-    <header className="flex justify-between ">
+    <header className="fixed z-10 flex w-full justify-between px-10 pt-4">
       <MainLogo />
       <NavigationPanel />
     </header>
