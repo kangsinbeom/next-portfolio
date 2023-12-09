@@ -1,10 +1,10 @@
-import Subtitle from '@/common/sentence/Subtitle';
+import { Contents, Footer } from './layouts';
 
 export const Contract = () => {
   return (
-    <section className="flex-col content-area">
-      <Subtitle>CONTACT</Subtitle>
-      <div></div>
+    <section className="center-layout">
+      <Contents />
+      <Footer />
     </section>
   );
 };

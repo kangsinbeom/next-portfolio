@@ -24,6 +24,10 @@ module.exports = {
           '@apply relative flex h-screen w-screen border-2 border-red-600 bg-slate-400 p-5':
             '',
         },
+        '.center-layout': {
+          '@apply relative grid h-screen w-screen place-items-center border-2 border-red-600 bg-slate-400 p-5':
+            '',
+        },
       });
     }),
   ],

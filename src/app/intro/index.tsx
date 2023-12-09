@@ -2,7 +2,7 @@ import Title from './components/Title';
 
 export const Intro = () => {
   return (
-    <section className="flex-col content-area">
+    <section className="center-layout">
       <Title />
     </section>
   );
