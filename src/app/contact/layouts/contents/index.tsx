@@ -1,10 +1,11 @@
 import Subtitle from '@/common/sentence/Subtitle';
+import Infomation from '../../components/Infomation';
 
 export const Contents = () => {
   return (
-    <div>
+    <div className="flex flex-col items-center justify-center gap-10">
       <Subtitle>CONTACT</Subtitle>
-      <div className="gird h-20 w-20 place-self-center bg-red-600"></div>
+      <Infomation />
     </div>
   );
 };

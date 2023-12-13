@@ -9,9 +9,8 @@ const MainImage = () => {
         }
         alt="pictuer of the author"
         priority={true}
-        width={500}
-        height={100}
-        style={{ width: '100%', height: 'auto' }}
+        width={720}
+        height={960}
       />
     </div>
   );

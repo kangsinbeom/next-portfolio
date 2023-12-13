@@ -1,5 +1,3 @@
-import type { Config } from 'tailwindcss';
-
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
@@ -21,11 +19,11 @@ module.exports = {
     plugin(function ({ addUtilities }: { addUtilities: any }) {
       addUtilities({
         '.content-area': {
-          '@apply relative flex h-screen w-screen border-2 border-red-600 bg-slate-400 p-5':
+          '@apply flex h-screen w-screen border-2 border-red-600 bg-slate-400 p-5':
             '',
         },
         '.center-layout': {
-          '@apply relative grid h-screen w-screen place-items-center border-2 border-red-600 bg-slate-400 p-5':
+          '@apply grid h-screen w-screen place-items-center border-2 border-red-600 bg-slate-400 p-5':
             '',
         },
       });
