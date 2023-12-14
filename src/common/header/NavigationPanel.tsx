@@ -1,10 +1,6 @@
-'use client';
-
-import { useState } from 'react';
 import NavItem from './NavItem';
 
 const NavigationPanel = () => {
-  const [select, setSelect] = useState<string>('INTRO');
   const navList = ['INTRO', 'ABOUT', 'SKILLS', 'PROJECT', 'CONTACT'];
   return (
     <nav className="flex gap-3 ">

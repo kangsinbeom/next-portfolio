@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Gasoek+One&family=Knewave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Black+Han+Sans&family=Gasoek+One&family=Knewave&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

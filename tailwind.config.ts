@@ -1,5 +1,11 @@
 const plugin = require('tailwindcss/plugin');
-
+type Utilities = {
+  [key: string]:
+    | string
+    | Record<string, string>
+    | { [key: string]: string }
+    | Array<Record<string, string>>;
+};
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
@@ -11,19 +17,33 @@ module.exports = {
       },
       fontFamily: {
         lalezar: ['Lalezar'],
-        knewave: ['Knewave'],
+        gasoek: ['Gasoek One'],
+        blackhansans: ['Black Han Sans'],
+      },
+      keyframes: {
+        fadein: {
+          from: { opacity: '0' },
+          to: { opacity: '1' },
+        },
+      },
+      animation: {
+        fadein: 'fadein 1s ease-in-out',
+        'fadein-2': 'fadein 2s ease-in-out',
       },
     },
   },
   plugins: [
-    plugin(function ({ addUtilities }: { addUtilities: any }) {
+    plugin(function ({
+      addUtilities,
+    }: {
+      addUtilities: (utilities: Utilities) => void;
+    }) {
       addUtilities({
         '.content-area': {
-          '@apply flex h-screen w-screen border-2 border-red-600 bg-slate-400 p-5':
-            '',
+          '@apply flex h-screen w-screen border-2 border-red-600 p-5': '',
         },
         '.center-layout': {
-          '@apply grid h-screen w-screen place-items-center border-2 border-red-600 bg-slate-400 p-5':
+          '@apply grid h-screen w-screen place-items-center border-2 border-red-600 p-5':
             '',
         },
       });
