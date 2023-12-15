@@ -33,6 +33,8 @@ module.exports = {
     },
   },
   plugins: [
+    require('tailwindcss-animated'),
+
     plugin(function ({
       addUtilities,
     }: {
