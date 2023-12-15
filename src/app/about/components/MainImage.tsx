@@ -1,8 +1,16 @@
+'use client';
+
+import useScrollAnimation from '@/hooks/useScrollAnimation';
 import Image from 'next/image';
 
 const MainImage = () => {
+  const { scrollRef, scrollEl } = useScrollAnimation();
+  console.log(scrollEl);
   return (
-    <div className="relative h-auto w-[500px] shadow-[10px_20px_10px_7px_rgba(0,0,0,0.5)]">
+    <div
+      ref={scrollRef}
+      className="relative h-auto w-[500px] shadow-[10px_20px_10px_7px_rgba(0,0,0,0.5)]"
+    >
       <Image
         src={
           'https://res.cloudinary.com/dmowpence/image/upload/v1701931247/ykx4gctiwbaoslkyygmz.jpg'
@@ -11,6 +19,7 @@ const MainImage = () => {
         priority={true}
         width={720}
         height={960}
+        className="animate-fade-up"
       />
     </div>
   );
