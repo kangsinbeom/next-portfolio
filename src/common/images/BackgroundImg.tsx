@@ -9,7 +9,7 @@ const BackgroundImg = ({ layout }: { layout: string }) => {
       src={layoutImg}
       fill
       priority={true}
-      className="animate-fadein -z-10 transition-opacity duration-100"
+      className="-z-10 animate-fadein transition-opacity duration-100"
     />
   );
 };

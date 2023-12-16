@@ -9,7 +9,7 @@ const MainImage = () => {
   return (
     <div
       ref={scrollRef}
-      className="relative h-auto w-[500px] shadow-[10px_20px_10px_7px_rgba(0,0,0,0.5)]"
+      className="relative h-full w-[500px] shadow-[10px_20px_10px_7px_rgba(0,0,0,0.5)]"
     >
       <Image
         src={
@@ -17,8 +17,7 @@ const MainImage = () => {
         }
         alt="pictuer of the author"
         priority={true}
-        width={720}
-        height={960}
+        fill
         className="animate-fade-up"
       />
     </div>
