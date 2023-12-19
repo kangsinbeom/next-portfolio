@@ -1,5 +1,9 @@
 const Subtitle = ({ children }: { children: string }) => {
-  return <h2 className="font-lalezar text-6xl">{children}</h2>;
+  return (
+    <h2 className="font-serif text-4xl font-extrabold text-white">
+      {children}
+    </h2>
+  );
 };
 
 export default Subtitle;

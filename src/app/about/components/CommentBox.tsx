@@ -1,12 +1,13 @@
 import React from 'react';
 import Comment from './Comment';
 import Button from '@/common/buttons/Button';
+import Subtitle from '@/common/sentence/Subtitle';
 
 const CommentBox = () => {
   return (
-    <div className="flex flex-col justify-center">
+    <div className="flex flex-col gap-5">
+      <Subtitle>About Me</Subtitle>
       <Comment />
-      <Button />
     </div>
   );
 };
